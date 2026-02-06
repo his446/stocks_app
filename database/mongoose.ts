@@ -31,5 +31,7 @@ export const connectToDatabase = async () => {
     throw err;
   }
 
-  console.log(`Connected to db - mode: ${process.env.NODE_ENV}`)
+  console.log(`Connected to db - mode: ${process.env.NODE_ENV}`);
+
+  return cached.conn;
 };
